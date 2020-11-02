@@ -14,5 +14,11 @@
             "name": "Paweł Mieleszkiewicz",
             "email": "pawel.mieleszkiewicz@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "PMieleszkiewicz\\ModelDescriber\\": "src"
+        }
+    },
+    "minimum-stability": "dev"
 }

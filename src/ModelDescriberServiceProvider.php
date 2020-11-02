@@ -23,6 +23,12 @@ class ModelDescriberServiceProvider extends ServiceProvider
             $publishPath = base_path('config/model-describer.php');
         }
         $this->publishes([$configPath => $publishPath], 'config');
+
+        if ($this->app->runningInConsole()) {
+            $this->commands(
+                ModelFullDescriber::class
+            );
+        }
     }
 
     /**
@@ -34,9 +40,5 @@ class ModelDescriberServiceProvider extends ServiceProvider
     {
         $configPath = __DIR__ . '/../config/model-describer.php';
         $this->mergeConfigFrom($configPath, 'model-describer');
-
-        $this->commands(
-            ModelFullDescriber::class
-        );
     }
 }
