@@ -1,0 +1,18 @@
+{
+    "name": "pawelmieleszkiewicz/laravel-console-model-describer",
+    "description": "Laravel additional console model utils",
+    "type": "library",
+    "require": {
+        "php": ">=7.1",
+        "illuminate/console": "^8.0",
+        "illuminate/database": "^8.0",
+        "illuminate/config": "^8.11"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paweł Mieleszkiewicz",
+            "email": "pawel.mieleszkiewicz@gmail.com"
+        }
+    ]
+}
